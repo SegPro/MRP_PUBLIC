@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+    <title>Mystic River Poker</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="./index.html">MRP</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Accueil</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> A propos de MRP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./championship.html"><span class="fa fa-trophy fa-lg"></span> Championnat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-wrench fa-lg"></span> Travail technique</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-comments fa-lg"></span> Forum</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./register.html"><span class="fa fa-user-plus fa-lg"></span> Adhérer</a></li>
+                </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> S'authentifier
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class=" col-12 col-md-3 col-lg-2">
+                    <img class="col-md-12 align-self-center" src="img/mrp_white.png" alt="mrp_white">
+                </div>
+                <div class="col-12 col-md-7 col-lg-5 col-xl-4">
+                    <h1 class="d-none d-md-flex">Mystic River Poker</h1>
+                    <p class="text-center d-none d-md-flex">Club de poker sur Bordeaux (Pessac) </p> 
+                    <p class="text-center d-md-none">Club de poker sur Bordeaux (Pessac) </p> 
+                </div>
+                <div class="offset-1 col-10 offset-md-3 offset-lg-2 col-md-5 col-lg-3 align-self-center">
+                    <a class="btn btn-sm btn-warning btn-block" href="#reserveform">S'inscrire à une manche</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Accueil</a></li>
+                <li class="breadcrumb-item active">A propos de MRP</li>
+            </ol>
+            <div class="col-12">
+               <h3>A propos de MRP</h3>
+               <hr>
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col-12 col-lg-6">
+                <h2>L'histoire du club</h2>
+                <p>Le club a vu le jour en mai 2020 à Pessac. Lors d'un canement de philosophie et de trajectoire d'un autre club de Bordeaux le BCH, l'ancien président du BCH <em>Frédéric Fabre</em> et <em>Damien Frances</em> l'actuel président de MRP ont décidé de lancer un nouveau club bordelais avec des valeurs fortes de respect et de bienveillance.</p>
+            </div>
+            <div>
+            </div>
+        </div>
+
+
+        <div class="row row-content">
+            <div class="col-12">
+                <h2>Les membres du bureau</h2>
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" role="tab" id="damien head">
+                            <h3 class="mb-0">
+                                <a data-toggle="collapse" data-target="#damien">Damien Frances <small>Président du club</small></a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="collapse show" id="damien" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="media row">
+                                    <img class="offset-2 offset-sm-0 col-8 col-sm-4 col-lg-3 col-xl-2 d-flex align-self-center" src="img/damien_frances.jpg" alt="damien_frances" >
+                                    <div class="col-12 col-sm-8 col-lg-5 col-xl-6 media-body align-self-center">
+                                        <p>Damien Frances est un joueur de poker de 24 ans, travaillant régulièrement son jeu et qui évolue actuellement sur les micro-limites online</p>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" role="tab" id="frederichead">
+                            <h3 class="mb-0">
+                                <a data-toggle="collapse" data-target="#frederic">Frédéric Fabre <small>Trésorier du club</small></a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="collapse" id="frederic" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="media row">
+                                    <img class="offset-2 offset-sm-0 col-8 col-sm-4 col-lg-3 col-xl-2 d-flex align-self-center" src="img/frederic_fabre.jpg" alt="frederic_fabre">
+                                    <div class="col-12 col-sm-8 col-lg-5 col-xl-6 media-body align-self-center">
+                                        <p>Frédéric Fabre est un joueur de poker expérimenté. Régulièrement présent sur les manches CDC et anciennement président du BCH pendant 4 ans, il s'occupe aujourd'hui de la trésorerie du club.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" role="tab" id="maximehead">
+                            <h3 class="mb-0">
+                                <a data-toggle="collapse" data-target="#maxime">Maxime Lavaud <small>Responsable communication</small></a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="collapse" id="maxime" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="media row">
+                                    <img class="offset-2 offset-sm-0 col-8 col-sm-4 col-lg-3 col-xl-2 d-flex align-self-center" src="img/maxime_lavaud.jpg" alt="maxime_lavaud">
+                                    <div class="col-12 col-sm-8 col-lg-5 col-xl-6 media-body align-self-center">
+                                        <p>Maxime Lavaud est un jeune joueur de Poker de 28 ans, déjà plus de 1 000€ de bankroll online, il travaille aujourd'hui son jeu sur les micro-limites avec Damien Frances. Il est responsable au sein du club de la communication avec les partenaires du club tels que Winamax</em></p>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+       </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 col-sm">
+                    <h5>Liens</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html">Accueuil</a></li>
+                        <li><a href="#">A propos</a></li>
+                        <li><a href="./championship.html">Championnat</a></li>
+                        <li><a href="#">Travail technique</a></li>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
+                        <li><a href="./register.html">Adhérer</a></li>
+                        <li><a data-toggle="modal" data-target="#loginModal" href="#">S'authentifier</a></li>
+                    </ul>
+                </div>
+                <div class="col-8 col-sm">
+                    <h5>L'adresse</h5>
+                    <address>
+                      17 Rue du serpent<br>
+                      Batiment D2<br>
+                      Appartement 273<br>
+                      33600 Pessac<br>
+                      <i class="fa fa-phone fa-lg"></i> 06 20 44 32 87<br>
+                      <i class="fa fa-envelope fa-lg"></i> <a class="mail-address" href="mailto:mystic.river.poker@gmail.com">mystic.river.poker@gmail.com</a>
+                    </address>
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 20202 Mysic River Poker</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Authentification</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="login">Login</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="login" placeholder="Email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="password">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="password" placeholder="Password">
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Se rappeler de moi
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Annuler</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">S'authentifier</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+    
+</body>
+
+</html>

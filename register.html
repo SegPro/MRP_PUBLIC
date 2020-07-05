@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Bootstrap CSS -->
+        <!-- build:css css/main.css -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- endbuild -->
+        <title>Mystic River Poker</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand mr-auto" href="#">MRP</a>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> A propos de MRP</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./championship.html"><span class="fa fa-trophy fa-lg"></span> Championnat</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-wrench fa-lg"></span> Travail technique</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-comments fa-lg"></span> Forum</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-user-plus fa-lg"></span> Adhérer</a></li>
+                    </ul>
+                    <span class="navbar-text">
+                        <a data-toggle="modal" data-target="#loginModal">
+                            <span class="fa fa-sign-in"></span> S'authentifier
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row row-header">
+                    <div class=" col-12 col-md-3 col-lg-2">
+                        <img class="col-md-12 align-self-center" src="img/mrp_white.png" alt="mrp_white">
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-5 col-xl-4">
+                        <h1 class="d-none d-md-flex">Mystic River Poker</h1>
+                        <p class="text-center d-none d-md-flex">Club de poker sur Bordeaux (Pessac) </p> 
+                        <p class="text-center d-md-none">Club de poker sur Bordeaux (Pessac) </p> 
+                    </div>
+                    <div class="offset-1 col-10 offset-md-3 offset-lg-2 col-md-5 col-lg-3 align-self-center">
+                        <a class="btn btn-sm btn-warning btn-block" href="#reserveform">S'inscrire à une manche</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <ol class="col-12 breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html">Accueil</a></li>
+                    <li class="breadcrumb-item active">Adhérer</li>
+                </ol>
+                <div class="col-12">
+                   <h3>Nous rejoindre</h3>
+                   <hr>
+                </div>
+            </div>
+
+            
+
+            <div class="row row-content">
+                <div class="col-12">
+                   <h3>Formulaire d'inscription MYSTIC RIVER POKER</h3>
+                   <p>Saison 2020-2021</p>
+                </div>
+                 <div class="col-12">
+                     <form>
+                        <div class="form-group row">
+                            <label for="lastname" class="col-md-2 col-form-label">Nom</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Nom">
+                            </div>
+                        </div>
+                         <div class="form-group row">
+                             <label for="firstname" class="col-md-2 col-form-label">Prénom</label>
+                             <div class="col-md-10">
+                                 <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Prénom">
+                             </div>
+                         </div>
+                         <div class="form-group row">
+                            <label for="birthday" class="col-12 col-sm-2 col-form-label d-none d-md-flex">Né(e) le</label>
+                            <label for="birthday" class="col-12 col-form-label d-md-none">Informations Naissance</label>
+                            <div class="col-7 col-md-4">
+                                <input type="date" class="form-control" id="birthday" name="birthday">
+                            </div>
+                            <label for="birth" class="col-md-1 col-form-label d-none d-md-flex"> à</label>
+                            <div class="col-5 col-md-5">
+                                <input type="text" class="form-control" id="birth" name="birth" placeholder="Ville">
+                            </div>
+                        </div>
+                         <div class="form-group row">
+                             <label for="address" class="col-12 col-md-2 col-form-label">Adresse</label>
+                             <div class="col-12 col-md-10">
+                                 <input type="tel" class="form-control" id="address" name="address" placeholder="N° Voie, Complément d'adresse">
+                             </div>
+                         </div>
+                         <div class="form-group row">
+                             <div class="col-6 col-md-5 offset-md-2">
+                                 <input type="text" class="form-control" id="code" name="code" placeholder="Code Postal">
+                             </div>
+                             <div class="col-6 col-md-5">
+                                <input type="text" class="form-control" id="city" name="city" placeholder="Ville">
+                            </div>
+                         </div>
+                         <div class="form-group row">
+                             <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                             <div class="col-md-10">
+                                 <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                             </div>
+                         </div>
+                         <div class="form-group row">
+                            <label for="telnum" class="col-12 col-md-2 col-form-label">Téléphone</label>
+                            <div class="col-5 col-md-3">
+                                <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="+33">
+                            </div>
+                            <div class="col-7 col-md-7">
+                                <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Numéro">
+                            </div>
+                        </div>
+                         <div class="form-group row">
+                            <label for="telnum" class="col-12 col-form-label d-md-none">Type d'adhésion à Mystic River Poker</label>
+                            <label for="telnum" class="col-md-2 col-form-label d-none d-md-flex">Adhésion</label>
+                             <div class="col-12 col-md-10">
+                                 <select class="form-control">
+                                     <option>2 championnats (saison) - 70€</option>
+                                     <option>1 championnat (1/2 saison) - 40€</option>
+                                 </select>
+                             </div>
+                         </div>
+                         <div class="form-group row row-content">
+                            <h3>Droit à l'image et assurance</h3>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                    <label class="form-check-label" for="approve">
+                                        J'autorise le club à prendre des photos et/ou filmer à l'occasion des activités sportives ou associatives auxquelles je participe et autorise leur publication dans le bulletin d'information et sur le site internet du club.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                    <label class="form-check-label" for="approve">
+                                        Je certifie être titulaire d'une assurance Responsabilité Civile couvrant les dommages causés à des tiers ainsi que d'un contrat individuel accident couvrant mes propres dommages corporels.
+                                    </label>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="row">
+                             <div class="col-12">
+                                <p class="mention">Conformément à la loi 78-17 du 06.01.78, les adhérents sont informés de ce que les informations sont destinées à alimenter un fichier informatisé en mis oeuvre par MYSTIC RIVER POKER. Ils disposent d'un droit d'accès et de rectification aux données les concernant. L'association MYSTIC RIVER POKER dans le but de favoriser le développement de la section peut être amenée à communiquer à des tiers les coordonnées des adhérents. Des derniers peuvent s'opposer à cette cession sur papier libre adressé à la Présidence de MYSTIC RIVER POKER</p>
+                            </div>
+                        </div>
+                     </form>
+                 </div>
+                  <div class="col-12 col-md">
+                 </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">             
+                    <div class="col-4 col-sm">
+                        <h5>Liens</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="./index.html">Accueuil</a></li>
+                            <li><a href="./aboutus.html">A propos</a></li>
+                            <li><a href="./championship.html">Championnat</a></li>
+                            <li><a href="#">Travail technique</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="./register.html">Adhérer</a></li>
+                            <li><a data-toggle="modal" data-target="#loginModal" href="#">S'authentifier</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-8 col-sm">
+                        <h5>L'adresse</h5>
+                        <address>
+                          17 Rue du serpent<br>
+                          Batiment D2<br>
+                          Appartement 273<br>
+                          33600 Pessac<br>
+                          <i class="fa fa-phone fa-lg"></i> 06 20 44 32 87<br>
+                          <i class="fa fa-envelope fa-lg"></i> <a class="mail-address" href="mailto:mystic.river.poker@gmail.com">mystic.river.poker@gmail.com</a>
+                       </address>
+                    </div>
+                    <div class="col-12 col-sm-3 align-self-center">
+                        <div class="text-center">
+                            <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                            <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                        </div>
+                    </div>
+               </div>
+               <div class="row justify-content-center">             
+                    <div class="col-auto">
+                        <p>© Copyright 20202 Mysic River Poker</p>
+                    </div>
+               </div>
+            </div>
+        </footer>
+
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Authentification</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                        <label class="sr-only" for="login">Login</label>
+                                        <input type="email" class="form-control form-control-sm mr-1" id="login" placeholder="Email">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="password">Password</label>
+                                    <input type="password" class="form-control form-control-sm mr-1" id="password" placeholder="Password">
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Se rappeler de moi
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Annuler</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">S'authentifier</button>        
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+        <!-- build:js js/main.js -->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <!-- endbuild -->
+    </body>
+
+</html>

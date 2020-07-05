@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Bootstrap CSS -->
+        <!-- build:css css/main.css -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- endbuild -->
+        <title>Mystic River Poker</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand mr-auto" href="#">MRP</a>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> A propos de MRP</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./championship.html"><span class="fa fa-trophy fa-lg"></span> Championnat</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-wrench fa-lg"></span> Travail technique</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-comments fa-lg"></span> Forum</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./register.html"><span class="fa fa-user-plus fa-lg"></span> Adhérer</a></li>
+                    </ul>
+                    <span class="navbar-text">
+                        <a data-toggle="modal" data-target="#loginModal">
+                            <span class="fa fa-sign-in"></span> S'authentifier
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row row-header">
+                    <div class=" col-12 col-md-3 col-lg-2">
+                        <img class="col-md-12 align-self-center" src="img/mrp_white.png" alt="mrp_white">
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-5 col-xl-4">
+                        <h1 class="d-none d-md-flex">Mystic River Poker</h1>
+                        <p class="text-center d-none d-md-flex">Club de poker sur Bordeaux (Pessac) </p> 
+                        <p class="text-center d-md-none">Club de poker sur Bordeaux (Pessac) </p> 
+                    </div>
+                    <div class="offset-1 col-10 offset-md-3 offset-lg-2 col-md-5 col-lg-3 align-self-center">
+                        <a class="btn btn-sm btn-warning btn-block" href="#reserveform">S'inscrire à une manche</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row row-content">
+                <div class="col">
+                    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active">
+                                <div class="d-flex h-100 align-items-center justify-content-center">
+                                    <div class="carousel-caption">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h2>Une mentalité bienveillante</h2>
+                                        </div>
+                                        <div class="col-12 d-none d-sm-block">
+                                            <p>Amateurs de poker partageant les valeurs de respect, bienveillance, envie d'apprendre et voulant représenter les couleurs du club à l'extérieur.</p>
+                                        </div>
+                                    </div>       
+                                    </div>                         
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex h-100 align-items-center justify-content-center">
+                                    <div class="carousel-caption">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h2>Tournoi online Winamax</h2>
+                                        </div>
+                                        <div class="col-12 d-none d-sm-block">
+                                            <p>Le club se retrouve sur Winamax tous les vendredis jusqe la reprise en septembre pour s'afronter et disputer la doation de notre partenaire Winamax </p>
+                                        </div>
+                                    </div>       
+                                    </div>                         
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex h-100 align-items-center justify-content-center">
+                                    <div class="carousel-caption">
+                                    <div class="row">
+                                        <div class="col-12 ">
+                                            <h2>Rencontres des vendredis soirs</h2>
+                                        </div>
+                                        <div class="col-12 d-none d-sm-block">
+                                            <p>Le club se retrouve tous les vendredis soirs à partir de 21h pour partager un moment autour d'une ou plusieurs tables en No Limit Hold'hem ou variante</p>
+                                        </div>
+                                    </div>       
+                                    </div>                         
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex h-100 align-items-center justify-content-center">
+                                    <div class="carousel-caption">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h2>Club Des Clubs</h2>
+                                        </div>
+                                        <div class="col-12 d-none d-sm-block">
+                                            <p>Représenté par ses meilleurs joueurs le club dispute les interclubs dans une compétition pouvat les emmener jusqu'au titre national</p>
+                                        </div>
+                                    </div>       
+                                    </div>                         
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex h-100 align-items-center justify-content-center">
+                                    <div class="carousel-caption">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h2>Travailler son jeu</h2>
+                                        </div>
+                                        <div class="col-12 d-none d-sm-block">
+                                            <p>Le club met à disposition des ressources inédites afin de travailler son jeu. Des ranges, des analyses de mains et un espace collaboratif est mis à disposition pour permettre à qui le souhaite d'améliorer son poker</p>
+                                        </div>
+                                    </div>       
+                                    </div>                         
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#mycarousel" data-slide-to="1"></li>
+                            <li data-target="#mycarousel" data-slide-to="2"></li>
+                            <li data-target="#mycarousel" data-slide-to="3"></li>
+                            <li data-target="#mycarousel" data-slide-to="4"></li>
+                        </ol>
+                        <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                        <button class="btn btn-danger btn-sm" id="carouselButton">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-content align-items-center">
+                <div class="col-12">
+                    <h2>Une mentalité bienveillante</h2>
+                    <p>Amateurs de poker partageant les valeurs de respect, bienveillance, envie d'apprendre et voulant représenter les couleurs du club à l'extérieur.</p>
+                </div>
+            </div>
+    
+    
+            <div class="row row-content align-items-center">
+                <div class="col-12 col-sm-4 col-md-3">
+                    <h3>Les news</h3>
+                </div>
+                <div class="col col-sm col-md">
+                    <h2>Tournoi online Winamax</h2>
+                    <p>Le club se retrouve sur Winamax tous les vendredis jusqe la reprise en septembre pour s'afronter et disputer la doation de notre partenaire Winamax </p>
+                </div>
+            </div>
+    
+            <div class="row row-content align-items-center">
+                <div class="col-12 col-sm-4 col-md-3">
+                    <h3>Le jeu</h3>
+                </div>
+                <div class="col col-sm col-md">
+                    <h2>Rencontres des vendredis soirs</h2>
+                    <p>Le club se retrouve tous les vendredis soirs à partir de 21h pour partager un moment autour d'une ou plusieurs tables en No Limit Hold'hem ou variante</p>
+                </div>
+            </div>
+
+            <div class="row row-content align-items-center">
+                <div class="col-12 col-sm-4 col-md-3">
+                    <h3>La compétition</h3>
+                </div>
+                <div class="col col-sm col-md">
+                    <h2>Club Des Clubs</h2>
+                    <p>Représenté par ses meilleurs joueurs le club dispute les interclubs dans une compétition pouvat les emmener jusqu'au titre national</p>
+                </div>
+            </div>
+
+            <div class="row row-content align-items-center">
+                <div class="col-12 col-sm-4 col-md-3">
+                    <h3>La technique</h3>
+                </div>
+                <div class="col col-sm col-md">
+                    <h2>Travailler son jeu</h2>
+                    <p>Le club met à disposition des ressources inédites afin de travailler son jeu. Des ranges, des analyses de mains et un espace collaboratif est mis à disposition pour permettre à qui le souhaite d'améliorer son poker</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">             
+                    <div class="col-4 col-sm">
+                        <h5>Liens</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Accueuil</a></li>
+                            <li><a href="./aboutus.html">A propos</a></li>
+                            <li><a href="./championship.html">Championnat</a></li>
+                            <li><a href="#">Travail technique</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="./contactus.html">Contact</a></li>
+                            <li><a href="./register.html">Adhérer</a></li>
+                            <li><a data-toggle="modal" data-target="#loginModal" href="#">S'authentifier</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-8 col-sm">
+                        <h5>L'adresse</h5>
+                        <address>
+                          17 Rue du serpent<br>
+                          Batiment D2<br>
+                          Appartement 273<br>
+                          33600 Pessac<br>
+                          <i class="fa fa-phone fa-lg"></i> 06 20 44 32 87<br>
+                          <i class="fa fa-envelope fa-lg"></i> <a class="mail-address" href="mailto:mystic.river.poker@gmail.com">mystic.river.poker@gmail.com</a>
+                       </address>
+                    </div>
+                    <div class="col-12 col-sm-3 align-self-center">
+                        <div class="text-center">
+                            <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                            <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                        </div>
+                    </div>
+               </div>
+               <div class="row justify-content-center">             
+                    <div class="col-auto">
+                        <p>© Copyright 20202 Mysic River Poker</p>
+                    </div>
+               </div>
+            </div>
+        </footer>
+
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Authentification</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                        <label class="sr-only" for="login">Login</label>
+                                        <input type="email" class="form-control form-control-sm mr-1" id="login" placeholder="Email">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="password">Password</label>
+                                    <input type="password" class="form-control form-control-sm mr-1" id="password" placeholder="Password">
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Se rappeler de moi
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Annuler</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">S'authentifier</button>        
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+        <!-- build:js js/main.js -->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>
